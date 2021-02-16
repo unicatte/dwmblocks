@@ -1,7 +1,7 @@
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
-	/* {"⌨", "sb-kbselect", 0, 30}, */
+	{"⌨",	"sb-kbselect",	0,	30},
 	{"", "cat /tmp/recordingicon 2>/dev/null",	0,	9},
 	{"",	"sb-tasks",	10,	26},
 	{"",	"sb-music",	0,	11},
@@ -35,3 +35,4 @@ static char *delim = " ";
 // vim with the following line in your vimrc/init.vim:
 
 // autocmd BufWritePost ~/.local/src/dwmblocks/config.h !cd ~/.local/src/dwmblocks/; sudo make install && { killall -q dwmblocks;setsid dwmblocks & }
+
