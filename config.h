@@ -1,4 +1,8 @@
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
+
+//Base unit of time for intervals
+#define INTERVALms 1000
+
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
 	{"",	"sb-kbselect",	0,	30},

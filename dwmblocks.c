@@ -182,7 +182,7 @@ void statusloop()
 	{
 		getcmds(i);
 		writestatus();
-		sleep(1.0);
+		sleep(INTERVALms/1000.0);
 		i++;
 	}
 }
@@ -239,3 +239,4 @@ int main(int argc, char** argv)
 	signal(SIGINT, termhandler);
 	statusloop();
 }
+
